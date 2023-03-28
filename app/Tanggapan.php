@@ -1,0 +1,26 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Tanggapan extends Model
+{
+    protected $table = 'tanggapans';
+    protected $fillable = ['id_pengaduan', 'tgl_tanggapan', 'tanggapan','id'];
+    protected $primaryKey = 'id_tanggapan';
+
+    public function pengaduan(){
+        return $this->hasOne(Pengaduan::class, 'id_pengaduan', 'id_pengaduan');   
+    }
+
+    public function user(){
+        return $this->hasMany('App\User','id');
+    }
+
+    public function tanggapan(){
+        return $this->hasMany('App\Tanggapan','id_tanggapan','id_tanggapan');
+    }
+
+   
+}
