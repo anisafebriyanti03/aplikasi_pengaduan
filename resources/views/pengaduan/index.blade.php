@@ -41,6 +41,7 @@
                             <table class="table table-striped table-hover" id="table-data">
                                 <thead>
                                     <tr>
+                                        <th>No</th>
                                         <th>Tanggal Pengaduan</th>
                                         <th>Nama Pengadu</th>
                                         <th>Laporan</th>
@@ -52,6 +53,7 @@
                                 <tbody>
                                     @foreach($pengaduan as $p)
                                     <tr>
+                                        <td>{{ $loop->iteration }}</td>
                                         <td>{{ $p->tgl_pengaduan }}</td>
                                         <td>{{ $p->user->nama ?? '' }}</td>
                                         <td>{{ $p->isi_laporan }}</td>

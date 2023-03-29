@@ -77,6 +77,12 @@
           <!-- /Logo -->
           <h4 class="mb-2">Selamat datang! 👋</h4>
           <p class="mb-4">Silahkan masuk akun Anda dan mulai melapor</p>
+          @if(session('error'))
+          <div class="alert alert-danger" role="alert">
+            <!-- <button type="button" class="close" data-dismiss="alert" aria-label="close">&times;</button>  -->
+            {{session('error')}}
+          </div>
+          @endif
 
           @if(session('success'))
           <div class="alert alert-success" role="alert">

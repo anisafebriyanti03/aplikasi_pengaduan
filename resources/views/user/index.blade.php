@@ -41,6 +41,7 @@
                             <table class="table table-striped table-hover" id="table-data">
                                 <thead>
                                     <tr>
+                                        <th>No</th>
                                         <th>NIK</th>
                                         <th>Nama Masyarakat</th>
                                         <th>Email</th>
@@ -52,6 +53,7 @@
                                 <tbody>
                                     @foreach($user as $p)
                                     <tr>
+                                        <td>{{ $loop->iteration }}</td>
                                         <td>{{ $p->nik }}</td>
                                         <td>{{ $p->nama}}</td>
                                         <td>{{ $p->email }}</td>

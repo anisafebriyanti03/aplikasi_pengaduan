@@ -53,6 +53,7 @@
                             <table class="table table-striped table-hover">
                                 <thead>
                                     <tr>
+                                        <th>No</th>
                                         <th>NIK</th>
                                         <th>Nama</th>
                                         <th>Email</th>
@@ -64,6 +65,7 @@
                                 <tbody>
                                     @foreach($petugas as $p)
                                     <tr>
+                                        <td>{{ $loop->iteration }}</td>
                                         <td>{{ $p->nik }}</td>
                                         <td>{{ $p->nama }}</td>
                                         <td>{{ $p->email }}</td>
