@@ -1,3 +1,4 @@
+@section('menu','cetak')
 <!DOCTYPE html>
 <html>
 <head>

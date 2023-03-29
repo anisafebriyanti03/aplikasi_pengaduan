@@ -1,3 +1,4 @@
+@section('menu','dashboard')
 <!DOCTYPE html>
 <html lang="en" class="light-style layout-menu-fixed " dir="ltr" data-theme="theme-default" data-assets-path="../assets/" data-template="vertical-menu-template-free">
     <head>
@@ -147,7 +148,7 @@
                                 </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-12 col-6 mb-4">
+                            <div class="col-lg-2 col-md-12 col-6 mb-4">
                                 <div class="card">
                                 <div class="card-body">
                                     <div class="card-title d-flex align-items-start justify-content-between">
@@ -167,11 +168,11 @@
                                     
                                     <span class="fw-semibold d-block mb-1">Tanggapan Pending</span>
                                     <h3 class="card-title text-nowrap mb-1">{{ $pending }}</h3>
-                                    <small class="text-success fw-semibold"><i class='bx bx-up-arrow-alt'></i> +28.42%</small>
+                                    <!-- <small class="text-success fw-semibold"><i class='bx bx-up-arrow-alt'></i> +28.42%</small> -->
                                 </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-12 col-6 mb-4">
+                            <div class="col-lg-2 col-md-12 col-6 mb-4">
                                 <div class="card">
                                 <div class="card-body">
                                     <div class="card-title d-flex align-items-start justify-content-between">
@@ -191,11 +192,11 @@
                                     
                                     <span class="fw-semibold d-block mb-1">Tanggapan Proses</span>
                                     <h3 class="card-title text-nowrap mb-1">{{ $proses }}</h3>
-                                    <small class="text-success fw-semibold"><i class='bx bx-up-arrow-alt'></i> +28.42%</small>
+                                    <!-- <small class="text-success fw-semibold"><i class='bx bx-up-arrow-alt'></i> +28.42%</small> -->
                                 </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-12 col-6 mb-4">
+                            <div class="col-lg-2 col-md-12 col-6 mb-4">
                                 <div class="card">
                                 <div class="card-body">
                                     <div class="card-title d-flex align-items-start justify-content-between">
@@ -215,7 +216,7 @@
                                     
                                     <span class="fw-semibold d-block mb-1">Tanggapan Selesai</span>
                                     <h3 class="card-title text-nowrap mb-1">{{ $selesai }}</h3>
-                                    <small class="text-success fw-semibold"><i class='bx bx-up-arrow-alt'></i> +28.42%</small>
+                                    <!-- <small class="text-success fw-semibold"><i class='bx bx-up-arrow-alt'></i> +28.42%</small> -->
                                 </div>
                                 </div>
                             </div>

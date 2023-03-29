@@ -46,7 +46,7 @@
         <ul class="menu-inner py-1">
 
             <!-- Dashboard -->
-            <li class="menu-item active">
+            <li class="menu-item {{ e($__env->yieldContent('menu')) == 'dashboard' ? 'active' : '' }}">
             <a href="/dashboard" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Dashboard</div>
@@ -61,7 +61,7 @@
                 </a>
             </li> -->
             @if (auth()->user()->level == "admin")
-            <li class="menu-item">
+            <li class="menu-item {{ e($__env->yieldContent('menu')) == 'petugas' ? 'active' : '' }}">
                 <a href="/petugas" class="menu-link">
                     <!-- <i class="menu-icon tf-icons bx bx-lock-open-alt"></i> -->
                     <!-- <i class="menu-icon tf-icons bx bxs-user-plus"></i> -->
@@ -69,7 +69,7 @@
                     <div data-i18n="Authentications">Petugas</div>
                 </a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item {{ e($__env->yieldContent('menu')) == 'masyarakat' ? 'active' : '' }}">
                 <a href="/masyarakats" class="menu-link">
                     <!-- <i class="menu-icon tf-icons bx bx-lock-open-alt"></i> -->
                     <!-- <i class="menu-icon tf-icons bx bxs-user-plus"></i> -->
@@ -83,7 +83,7 @@
             <span class="menu-header-text">Pages</span>
             </li>
            
-            <li class="menu-item">
+            <li class="menu-item {{ e($__env->yieldContent('menu')) == 'pengaduan' ? 'active' : '' }}">
                 <a href="/pengaduan" class="menu-link">
                     <!-- <i class="menu-icon tf-icons bx bx-dock-top"></i> -->
                     <i class="menu-icon tf-icons bx bx-book-bookmark"></i>
@@ -96,7 +96,7 @@
                     <div data-i18n="Authentications">Tanggapan</div>
                 </a>
             </li> -->
-            <li class="menu-item">
+            <li class="menu-item {{ e($__env->yieldContent('menu')) == 'cetak' ? 'active' : '' }}">
                 <a href="/pengaduan/formcetak" class="menu-link">
                     <!-- <i class="menu-icon tf-icons bx bx-cube-alt"></i> -->
                     <i class='menu-icon tf-icons bx bxs-cloud-download'></i>

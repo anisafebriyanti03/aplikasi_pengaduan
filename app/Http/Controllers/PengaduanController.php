@@ -156,8 +156,11 @@ class PengaduanController extends Controller
      */
     public function destroy($id)
     {
+        $pengaduan = Pengaduan::where('id_pengaduan',$id)->first();
+        Tanggapan::where('id_pengaduan',$pengaduan->id_pengaduan)->delete();
         Pengaduan::where('id_pengaduan',$id)->delete();
-        return redirect('/pengaduan')->with('Data terhapus','Data berhasil dihapus!');
+
+        return redirect('/pengaduan');
     }
 
     public function statusOnchange($id){    
