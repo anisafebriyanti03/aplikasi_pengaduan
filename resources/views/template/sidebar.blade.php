@@ -69,6 +69,14 @@
                     <div data-i18n="Authentications">Petugas</div>
                 </a>
             </li>
+            <li class="menu-item">
+                <a href="/masyarakats" class="menu-link">
+                    <!-- <i class="menu-icon tf-icons bx bx-lock-open-alt"></i> -->
+                    <!-- <i class="menu-icon tf-icons bx bxs-user-plus"></i> -->
+                    <i class="menu-icon tf-icons bx bxs-user-detail me-2"></i>
+                    <div data-i18n="Authentications">Masyarakat</div>
+                </a>
+            </li>
             @endif 
 
             <li class="menu-header small text-uppercase">

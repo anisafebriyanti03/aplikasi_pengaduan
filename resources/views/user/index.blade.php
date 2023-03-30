@@ -36,42 +36,30 @@
                         Pengaduan Masyarakat
                     </div> -->
                     <div class="card-body">
-                        <a href="/petugas/pengaduan/pdf"  class="btn btn-primary mb-5"><i class='bx bxs-cloud-download'></i> Unduh Laporan</a>
+                        <!-- <a href="/petugas/pengaduan/pdf"  class="btn btn-primary mb-5"><i class='bx bxs-cloud-download'></i> Unduh Laporan</a> -->
                         <div class="table-responsive text-nowrap">
                             <table class="table table-striped table-hover" id="table-data">
                                 <thead>
                                     <tr>
-                                        <th>Tanggal Pengaduan</th>
-                                        <th>Nama Pengadu</th>
-                                        <th>Laporan</th>
-                                        <th>Foto</th>
-                                        <th>Status</th>
+                                        <th>NIK</th>
+                                        <th>Nama Masyarakat</th>
+                                        <th>Email</th>
+                                        <th>No. Telp</th>
+                                        <th>Alamat</th>
                                         <th>OPSI</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($pengaduan as $p)
+                                    @foreach($user as $p)
                                     <tr>
-                                        <td>{{ $p->tgl_pengaduan }}</td>
-                                        <td>{{ $p->user->nama ?? '' }}</td>
-                                        <td>{{ $p->isi_laporan }}</td>
-                                        <td><img src="{{ asset('image/'. $p->foto ) }}" height="50" width="70" alt="pengaduan"/></td>
-                                        <!-- <td>{{ $p->status }}</td> -->
+                                        <td>{{ $p->nik }}</td>
+                                        <td>{{ $p->nama}}</td>
+                                        <td>{{ $p->email }}</td>
+                                        <td>{{ $p->telp }}</td>
+                                        <td>{{$p->alamat}}</td>
                                         <td>
-                                            @if ($p->status == '0')
-                                                <a href="#" class="badge rounded-pill bg-label-primary">Pending</a>
-                                            @elseif ($p->status == 'proses')
-                                                <a href="#" class="badge rounded-pill bg-label-warning">Proses</a>
-                                            @else
-                                                <a href="#" class="badge rounded-pill bg-label-success">Selesai</a>
-                                            @endif
-                                        </td>
-                                        <td>
-                                            <!-- <a href="/pengaduan/edit/{{ $p->id_pengaduan }}" class="btn btn-warning">Edit</a> -->
-                                            <a href="/pengaduan/show/{{ $p->id_pengaduan }}" class="btn btn-outline-success"><i class='bx bx-show'></i></a>
-                                            @if (auth()->user()->level == "admin")
-                                            <a href="/pengaduan/destroy/{{ $p->id_pengaduan }}" class="btn btn-outline-danger" onClick="return confirm('Yakin ingin Hapus?')"><i class='bx bx-trash-alt'></i></a>
-                                            @endif
+                                            <a href="/masyarakats/show/{{ $p->id }}" class="btn btn-outline-success"><i class='bx bx-show'></i></a>
+                                            <a href="/masyarakats/destroy/{{ $p->id }}" class="btn btn-outline-danger" onClick="return confirm('Yakin ingin Hapus?')"><i class='bx bx-trash-alt'></i></a>
                                         </td>
                                     </tr>
                                     @endforeach

@@ -89,6 +89,12 @@ Route::group(['middleware'=> ['auth','ceklevel:admin,petugas']], function(){
     Route::post('/pengaduan/show/onchange/{id}', 'PengaduanController@statusOnchange')->name('pengaduan.statusOnchange');
    
     // Route::get('/pengaduan/destroy/{id}', 'TanggapanController@destroy');
+
+    //tampildata masyarakat
+    Route::get('/masyarakats', 'UserController@index')->name('masyarakats');
+    Route::get('/masyarakats/show/{id}', 'UserController@show');
+    Route::get('/masyarakats/destroy/{id}', 'UserController@destroy');
+    
  
 });
 
