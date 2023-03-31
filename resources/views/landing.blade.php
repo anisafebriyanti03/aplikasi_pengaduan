@@ -156,7 +156,7 @@
 
 
         <!-- Overview Start -->
-        <div class="container-xxl bg-light my-6 py-5" id="overview">
+        <!-- <div class="container-xxl bg-light my-6 py-5" id="overview">
             <div class="container">
                 <div class="row g-5 py-5 align-items-center">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -207,7 +207,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Overview End -->
 
 
@@ -254,7 +254,7 @@
 
 
         <!-- Facts Start -->
-        <div class="container-xxl bg-primary my-6 py-6 wow fadeInUp" data-wow-delay="0.1s">
+        <!-- <div class="container-xxl bg-primary my-6 py-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="container">
                 <div class="row g-4">
                     <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
@@ -279,12 +279,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Facts End -->
 
 
         <!-- Process Start -->
-        <div class="container-xxl py-6">
+        <!-- <div class="container-xxl py-6">
             <div class="container">
                 <div class="row g-5">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -319,12 +319,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Process End -->
 
 
         <!-- Pricing Start -->
-        <div class="container-xxl py-6" id="pricing">
+        <!-- <div class="container-xxl py-6" id="pricing">
             <div class="container">
                 <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <h1 class="mb-3">Pricing Plan</h1>
@@ -399,12 +399,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Pricing End -->
 
 
         <!-- Testimonial Start -->
-        <div class="container-xxl py-6" id="testimonial">
+        <!-- <div class="container-xxl py-6" id="testimonial">
             <div class="container">
                 <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <h1 class="mb-3">What Our Clients Say</h1>
@@ -443,12 +443,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Testimonial End -->
 
 
         <!-- Contact Start -->
-        <div class="container-xxl py-6" id="contact">
+        <!-- <div class="container-xxl py-6" id="contact">
             <div class="container">
                 <div class="row g-5">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -517,7 +517,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Contact End -->
         
 
