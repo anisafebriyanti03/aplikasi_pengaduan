@@ -36,26 +36,6 @@ class UserprofileController extends Controller
 
     public function update_profileuser(Request $request)
     {
-        // $id = Auth::user()->id;
-        // $user = User::find($id);
-
-        // auth()->user()::where('id', $id)->update([
-        //     'nik' => $request->nik,
-        //     'nama' => $request->nama,
-        //     'email' => $request->email,
-        //     'password' =>  bcrypt($request->password),
-        //     'telp' => $request->telp,
-        //     // 'jenkel' => $request->jenkel,
-        //     // 'alamat' => $request->alamat,
-        //     'rt' => $request->rt,
-        //     'rw' => $request->rw,
-        //     'kode_pos' => $request->kode_pos,
-        //     // 'province_id' => $request->province_id,
-        //     // 'district_id' => $request->district_id,
-        //     // 'village_id' => $request->village_id
-        // ]);
-        // return redirect('/user')->with('Data diedit', 'Data berhasil diedit');
-
 
         $user = Auth::user();
 
