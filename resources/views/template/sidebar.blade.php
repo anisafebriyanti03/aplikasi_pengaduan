@@ -60,6 +60,12 @@
                     <div data-i18n="Layouts">Petugas</div>
                 </a>
             </li> -->
+            
+
+            <li class="menu-header small text-uppercase">
+            <span class="menu-header-text">Pages</span>
+            </li>
+
             @if (auth()->user()->level == "admin")
             <li class="menu-item {{ e($__env->yieldContent('menu')) == 'petugas' ? 'active' : '' }}">
                 <a href="/petugas" class="menu-link">
@@ -69,6 +75,7 @@
                     <div data-i18n="Authentications">Petugas</div>
                 </a>
             </li>
+            @endif 
             <li class="menu-item {{ e($__env->yieldContent('menu')) == 'masyarakat' ? 'active' : '' }}">
                 <a href="/masyarakats" class="menu-link">
                     <!-- <i class="menu-icon tf-icons bx bx-lock-open-alt"></i> -->
@@ -77,11 +84,7 @@
                     <div data-i18n="Authentications">Masyarakat</div>
                 </a>
             </li>
-            @endif 
-
-            <li class="menu-header small text-uppercase">
-            <span class="menu-header-text">Pages</span>
-            </li>
+           
            
             <li class="menu-item {{ e($__env->yieldContent('menu')) == 'pengaduan' ? 'active' : '' }}">
                 <a href="/pengaduan" class="menu-link">

@@ -26,10 +26,10 @@ class UsersTableSeeder extends Seeder
             'rt'=>'01',
             'rw'=>'01',
             'kode_pos'=>'1456',
-            'province_id'=>'01',
-            'regency_id'=>'01',
-            'district_id'=>'01',
-            'village_id'=>'01',
+            'province_id'=>'32',
+            'regency_id'=>'3276',
+            'district_id'=>'3276060',
+            'village_id'=>'3276060004',
             'remember_token' => Str::random(60)
         ]);
     }

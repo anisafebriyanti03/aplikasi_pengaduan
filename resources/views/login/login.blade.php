@@ -124,7 +124,7 @@
           <p class="text-center">
             <span>Belum buat akun?</span>
             <a href="{{ route('register') }}">
-              <span>Buat sebuah akun</span>
+              <span>Buat akun</span>
             </a>
           </p>
         </div>

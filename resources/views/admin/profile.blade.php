@@ -138,7 +138,7 @@
                     </div>
                     <div class="mt-2">
                         <a href="/petugas-profile/edit" class="btn btn-primary me-2">Update</a>
-                        <!-- <button type="reset" class="btn btn-outline-secondary">Cancel</button> -->
+                        <a href="/dashboard" class="btn btn-outline-secondary" value="Kembali">Kembali</a>
                     </div>
                     </form>
                 </div>

@@ -11,29 +11,10 @@ use App\User;
 
 class UserController extends Controller
 {
-    public function index(Request $request)
+    public function index()
     {
         $user = User::where('level','masyarakat')->get();
         return view('user.index', compact('user'));
-
-        // if($request) {
-        //     if($request->cari != ''){
-        //         $user = User::whereColumn([
-        //             ['level', "<>","admin"],
-        //             ['level', "<>","petugas"]
-        //         ])
-        //         ->orWhere('level', "<>","admin")
-        //         ->Where('level', "<>","petugas")
-        //         ->get();
-        //     }else{
-        //         $user = User::Where('level', "<>","admin")
-        //         ->get();
-        //     }
-            
-        // }else{
-        //     $user = User::all();
-        // }
-        // return view('user.index', compact('user'));
     }
 
     public function show($id)

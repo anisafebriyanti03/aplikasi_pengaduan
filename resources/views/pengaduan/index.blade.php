@@ -37,7 +37,9 @@
                         Pengaduan Masyarakat
                     </div> -->
                     <div class="card-body">
+                    @if (auth()->user()->level == "admin")
                         <a href="/petugas/pengaduan/pdf"  class="btn btn-primary mb-5"><i class='bx bxs-cloud-download'></i> Unduh Laporan</a>
+                    @endif
                         <div class="table-responsive text-nowrap">
                             <table class="table table-striped table-hover" id="table-data">
                                 <thead>

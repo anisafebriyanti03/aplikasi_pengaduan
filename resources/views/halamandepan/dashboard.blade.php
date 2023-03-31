@@ -31,7 +31,7 @@
                             <div class="col-sm-7">
                             <div class="card-body">
                                 <h5 class="card-title text-primary">Selamat datang {{ Auth::user()->nama }}! 🎉</h5>
-                                <p class="mb-4">You have done <span class="fw-bold">72%</span> more sales today. Check your new badge in your profile.</p>
+                                <p class="mb-4"><span class="fw-bold">Layanan Pengaduan Masyarakat Online.</span> Silahkan cek profil kamu</p>
 
                                 <a href="/petugas-profile" class="btn btn-sm btn-outline-primary">View Profile</a>
                             </div>
@@ -153,12 +153,12 @@
                                 <div class="card-body">
                                     <div class="card-title d-flex align-items-start justify-content-between">
                                     <div class="avatar flex-shrink-0">
-                                        <img src="../assets/img/icons/unicons/wallet-info.png" alt="Credit Card" class="rounded">
+                                        <img src="../assets/img/icons/unicons/cc-primary.png" alt="Credit Card" class="rounded">
                                     </div>
                                     <div class="dropdown">
-                                        <button class="btn p-0" type="button" id="cardOpt6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="bx bx-dots-vertical-rounded"></i>
-                                        </button>
+                                    <button class="btn p-0" type="button" id="cardOpt1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="bx bx-dots-vertical-rounded"></i>
+                                    </button>
                                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
                                         <a class="dropdown-item" href="javascript:void(0);">View More</a>
                                         <a class="dropdown-item" href="javascript:void(0);">Delete</a>
@@ -177,7 +177,7 @@
                                 <div class="card-body">
                                     <div class="card-title d-flex align-items-start justify-content-between">
                                     <div class="avatar flex-shrink-0">
-                                        <img src="../assets/img/icons/unicons/wallet-info.png" alt="Credit Card" class="rounded">
+                                        <img src="../assets/img/icons/unicons/cc-primary.png" alt="Credit Card" class="rounded">
                                     </div>
                                     <div class="dropdown">
                                         <button class="btn p-0" type="button" id="cardOpt6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -201,7 +201,7 @@
                                 <div class="card-body">
                                     <div class="card-title d-flex align-items-start justify-content-between">
                                     <div class="avatar flex-shrink-0">
-                                        <img src="../assets/img/icons/unicons/wallet-info.png" alt="Credit Card" class="rounded">
+                                        <img src="../assets/img/icons/unicons/cc-primary.png" alt="Credit Card" class="rounded">
                                     </div>
                                     <div class="dropdown">
                                         <button class="btn p-0" type="button" id="cardOpt6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

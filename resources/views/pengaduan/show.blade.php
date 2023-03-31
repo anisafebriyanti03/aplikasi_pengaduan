@@ -135,9 +135,9 @@
                                                             <p class="text-gray-800 dark:text-gray-400">
                                                     
                                                                 @if (empty(@$data_tanggapan->tanggapan))
-                                                                    Beri tanggapan
+                                                                <p class="badge rounded-pill bg-label-secondary"> Beri tanggapan</p>
                                                                 @else
-                                                                    {{ @$data_tanggapan->tanggapan}}
+                                                                    <p class="badge rounded-pill bg-label-warning">{{ @$data_tanggapan->tanggapan}}</p>
                                                                     <br>
                                                                     <br>
                                                                    
