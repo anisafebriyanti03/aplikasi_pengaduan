@@ -73,8 +73,8 @@
                                         </td>
                                         <td>
                                             <!-- <a href="/pengaduan/edit/{{ $p->id_pengaduan }}" class="btn btn-warning">Edit</a> -->
-                                            <a href="/pengaduan/show/{{ $p->id_pengaduan }}" class="btn btn-outline-success"><i class='bx bx-show'></i></a>
-                                            <a href="/pengaduan/destroy/{{ $p->id_pengaduan }}" class="btn btn-outline-danger" onClick="return confirm('Yakin ingin Hapus?')"><i class='bx bx-trash-alt'></i></a>
+                                            <a href="/pengaduan/show/{{ $p->id_pengaduan }}" data-toggle="tooltip" title="Detail Pengaduan" class="btn btn-outline-success"><i class='bx bx-show'></i></a>
+                                            <a href="/pengaduan/destroy/{{ $p->id_pengaduan }}" data-toggle="tooltip" title="Hapus" class="btn btn-outline-danger" onClick="return confirm('Yakin ingin Hapus?')"><i class='bx bx-trash-alt'></i></a>
                                         </td>
                                     </tr>
                                     @endforeach

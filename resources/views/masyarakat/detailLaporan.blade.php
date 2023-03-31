@@ -23,7 +23,7 @@
                 </a>
             </div>
             <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
-                    <a href="/laporanku"  class="btn rounded-pill btn-icon btn-outline-primary">
+                    <a href="/laporanku" data-toggle="tooltip" title="Back"  class="btn rounded-pill btn-icon btn-outline-primary">
                             <i class='tf-icons  bx bx-left-arrow-alt'></i>
                     </a>
                 <!-- Search -->

@@ -74,8 +74,8 @@
                                         <td>{{ $p->level }}</td>
                                         <td>
                                             <!-- <a href="/pengaduan/edit/{{ $p->id_pengaduan }}" class="btn btn-warning">Edit</a> -->
-                                            <a href="/petugas/show/{{ $p->id }}" class="btn btn-outline-success"><i class='bx bx-show'></i></i></a>
-                                            <a href="/petugas/destroy/{{ $p->id }}" class="btn btn-outline-danger" onClick="return confirm('Yakin ingin Hapus?')"> <i class='bx bx-trash-alt'></i></a>
+                                            <a href="/petugas/show/{{ $p->id }}" data-toggle="tooltip" title="Detail Petugas"  class="btn btn-outline-success"><i class='bx bx-show'></i></i></a>
+                                            <a href="/petugas/destroy/{{ $p->id }}" data-toggle="tooltip" title="Hapus"  class="btn btn-outline-danger" onClick="return confirm('Yakin ingin Hapus?')"> <i class='bx bx-trash-alt'></i></a>
                                         </td>
                                     </tr>
                                     @endforeach

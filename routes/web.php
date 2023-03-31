@@ -94,6 +94,12 @@ Route::group(['middleware'=> ['auth','ceklevel:admin,petugas']], function(){
     Route::get('/masyarakats', 'UserController@index')->name('masyarakats');
     Route::get('/masyarakats/show/{id}', 'UserController@show');
     Route::get('/masyarakats/destroy/{id}', 'UserController@destroy');
+
+    //userprofile petugas
+
+    Route::get('/petugas-profile', 'UserprofileController@petugas')->name('petugas.profile');
+    Route::get('/petugas-profile/edit', 'UserprofileController@edit_profilepetugas')->name('petugas.edit');
+    Route::put('/petugas-profile/update', 'UserprofileController@update_profilepetugas')->name('petugas.update');
     
  
 });
@@ -135,11 +141,7 @@ Route::group(['middleware'=> ['auth','ceklevel:admin']], function(){
 // Route::post('getKelurahan', 'UserprofileController@getKelurahan')->name('getKelurahan');//getkelurahan
 
 
-//userprofile petugas
 
-Route::get('/petugas-profile', 'UserprofileController@petugas')->name('petugas.profile');
-Route::get('/petugas-profile/edit', 'UserprofileController@edit_profilepetugas')->name('petugas.edit');
-Route::put('/petugas-profile/update', 'UserprofileController@update_profilepetugas')->name('petugas.update');
 
 //edit profile nyoba
 

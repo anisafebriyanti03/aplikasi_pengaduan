@@ -61,8 +61,8 @@
                                         <td>{{ $p->telp }}</td>
                                         <td>{{$p->alamat}}</td>
                                         <td>
-                                            <a href="/masyarakats/show/{{ $p->id }}" class="btn btn-outline-success"><i class='bx bx-show'></i></a>
-                                            <a href="/masyarakats/destroy/{{ $p->id }}" class="btn btn-outline-danger" onClick="return confirm('Yakin ingin Hapus?')"><i class='bx bx-trash-alt'></i></a>
+                                            <a href="/masyarakats/show/{{ $p->id }}" data-toggle="tooltip" title="Detail Masyarakat" class="btn btn-outline-success"><i class='bx bx-show'></i></a>
+                                            <a href="/masyarakats/destroy/{{ $p->id }}" data-toggle="tooltip" title="Hapus" class="btn btn-outline-danger" onClick="return confirm('Yakin ingin Hapus?')"><i class='bx bx-trash-alt'></i></a>
                                         </td>
                                     </tr>
                                     @endforeach
