@@ -96,6 +96,7 @@
                     <div data-i18n="Authentications">Tanggapan</div>
                 </a>
             </li> -->
+            @if (auth()->user()->level == "admin")
             <li class="menu-item {{ e($__env->yieldContent('menu')) == 'cetak' ? 'active' : '' }}">
                 <a href="/pengaduan/formcetak" class="menu-link">
                     <!-- <i class="menu-icon tf-icons bx bx-cube-alt"></i> -->
@@ -103,5 +104,6 @@
                     <div data-i18n="Misc">Cetak</div>
                 </a>
             </li>
+            @endif
         </ul>
 </aside>

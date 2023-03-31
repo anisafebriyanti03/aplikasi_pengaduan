@@ -91,7 +91,7 @@
                                 </table>
                                 <br>
                                 <div class="col-md-5">
-                                @if (auth()->user()->level == "petugas")
+                               
                                     <form action="{{ route('pengaduan.statusOnchange', $pengaduan->id_pengaduan)}}" method="post">
                                         @csrf
                                         <select name="status" class="form-select" onchange="javascript:this.form.submit()">
@@ -100,14 +100,14 @@
                                             <option value="selesai" @if($pengaduan->status == "selesai") selected @endif>Selesai</option>
                                         </select>
                                     </form>
-                                @endif          
+                                 
                                 </div>
                                 <!-- <div class="col-lg-4 col-md-6"> -->
                                         <!-- <div class="mt-3"> -->
                                             <!-- Button trigger modal -->
                                             <!-- Vertically Centered Modal -->
                                             <p class="demo-inline-spacing">
-                                            @if (auth()->user()->level == "petugas")
+                                          
                                                 @if (empty(@$data_tanggapan->tanggapan))
                                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCenter">
                                                     Beri tanggapan
@@ -115,7 +115,7 @@
                                                 @else
                                                    <button type="button" class="btn btn-success" disabled><i class='menu-icon tf-icons bx bx-check'></i>Ditanggapi</button>
                                                 @endif
-                                            @endif
+                                         
                                                 
 
                                                 <a class="btn btn-primary me-1" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -140,11 +140,11 @@
                                                                     {{ @$data_tanggapan->tanggapan}}
                                                                     <br>
                                                                     <br>
-                                                                    @if (auth()->user()->level == "petugas")
+                                                                   
                                                                         <a href="" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modal">
                                                                             Edit
                                                                         </a>
-                                                                    @endif
+                                                                    
                                                                 @endif
 
                                                                  <!-- <div class="col-lg-4 col-md-6 ms-auto"> -->

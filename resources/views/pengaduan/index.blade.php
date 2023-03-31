@@ -72,9 +72,7 @@
                                         <td>
                                             <!-- <a href="/pengaduan/edit/{{ $p->id_pengaduan }}" class="btn btn-warning">Edit</a> -->
                                             <a href="/pengaduan/show/{{ $p->id_pengaduan }}" class="btn btn-outline-success"><i class='bx bx-show'></i></a>
-                                            @if (auth()->user()->level == "admin")
                                             <a href="/pengaduan/destroy/{{ $p->id_pengaduan }}" class="btn btn-outline-danger" onClick="return confirm('Yakin ingin Hapus?')"><i class='bx bx-trash-alt'></i></a>
-                                            @endif
                                         </td>
                                     </tr>
                                     @endforeach
