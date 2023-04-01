@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>soFFer - Software Landing Page Template</title>
+    <title>Aplikasi Pengaduan Masyarakat</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">

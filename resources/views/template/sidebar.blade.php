@@ -100,13 +100,12 @@
                 </a>
             </li> -->
             @if (auth()->user()->level == "admin")
-            <li class="menu-item {{ e($__env->yieldContent('menu')) == 'cetak' ? 'active' : '' }}">
+            <!-- <li class="menu-item {{ e($__env->yieldContent('menu')) == 'cetak' ? 'active' : '' }}">
                 <a href="/pengaduan/formcetak" class="menu-link">
-                    <!-- <i class="menu-icon tf-icons bx bx-cube-alt"></i> -->
                     <i class='menu-icon tf-icons bx bxs-cloud-download'></i>
                     <div data-i18n="Misc">Cetak</div>
                 </a>
-            </li>
+            </li> -->
             @endif
         </ul>
 </aside>

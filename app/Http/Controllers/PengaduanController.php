@@ -47,7 +47,7 @@ class PengaduanController extends Controller
     {
        // dd(Auth::user()->nik);
         $this->validate($request,[
-    		// 'tgl_pengaduan' => Carbon::now()->format('Y-m-d H:i:s'),
+    		// 'tgl_pengaduan' => Carbon::now()->format('Y-m-d'),
             'isi_laporan' => 'required',
             'foto' => 'required',
             // 'status' => 'required'
@@ -59,7 +59,7 @@ class PengaduanController extends Controller
         
         Pengaduan::create([
     		// 'tgl_pengaduan' => Carbon::now()->format('Y-m-d'),
-            'tgl_pengaduan' => date ('Y-m-d'),
+            'tgl_pengaduan' => date('Y-m-d'),
     		'nik' => $nik,
             'isi_laporan' => $request->isi_laporan,
             'foto' => $imgName,
